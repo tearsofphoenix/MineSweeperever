@@ -27,6 +27,11 @@ int gameLevelDetail[4][3]={
 {
     [super viewDidLoad];
 
+    if ([self respondsToSelector: @selector(setEdgesForExtendedLayout:)])
+    {
+        [self setEdgesForExtendedLayout: UIRectEdgeNone];
+    }
+    
 	self.title = @"MineSweeper Ever!";
 	self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
 }
@@ -57,9 +62,9 @@ int gameLevelDetail[4][3]={
 	[self.navigationController pushViewController:[[HighScoreViewController new] autorelease] animated:YES];	
 }
 
--(IBAction)onPlayMovie:(id)sender
+- (BOOL)prefersStatusBarHidden
 {
-
+    return YES;
 }
  
 @end

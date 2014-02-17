@@ -11,36 +11,15 @@
 
 @implementation HighScoreViewController
 
-
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 	self.title = @"High Scores";
-//	self.navigationController.navigationBar.tintColor = [UIColor cyanColor];
-	
+    if ([self respondsToSelector: @selector(setEdgesForExtendedLayout:)])
+    {
+        [self setEdgesForExtendedLayout: UIRectEdgeNone];
+    }
 }
-
-
-
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-    [super dealloc];
-}
-
 
 -(IBAction)changeIndex:(id)sender
 {
@@ -52,7 +31,8 @@
 #pragma mark -
 #pragma mark  tableView dataSourUITableView *)atableView {
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
@@ -79,6 +59,10 @@
 	return cell;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
 
 @end
 

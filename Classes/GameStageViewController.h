@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#define CELL_MAX_WIDTH 48
+#define CELL_MAX_WIDTH 40
 #define CELL_MIN_WIDTH 24
 
 enum GameState {

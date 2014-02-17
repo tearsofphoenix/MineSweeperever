@@ -21,7 +21,6 @@
 		7133B77110CE438D005953C1 /* cell_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7133B76A10CE438D005953C1 /* cell_normal.png */; };
 		7133B8C010CE8FA0005953C1 /* HighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7133B8BE10CE8FA0005953C1 /* HighScoreViewController.m */; };
 		7133B8C110CE8FA0005953C1 /* HighScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7133B8BF10CE8FA0005953C1 /* HighScoreViewController.xib */; };
-		7133B90510CEA0F0005953C1 /* default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7133B90410CEA0F0005953C1 /* default.plist */; };
 		717B15AE10C7753A00DFB011 /* NewGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717B15AC10C7753A00DFB011 /* NewGameViewController.m */; };
 		717B15AF10C7753A00DFB011 /* NewGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717B15AD10C7753A00DFB011 /* NewGameViewController.xib */; };
 		717B15EC10C79C7900DFB011 /* GameStageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717B15EB10C79C7900DFB011 /* GameStageViewController.m */; };
@@ -55,7 +54,6 @@
 		7133B8BD10CE8FA0005953C1 /* HighScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreViewController.h; sourceTree = "<group>"; };
 		7133B8BE10CE8FA0005953C1 /* HighScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreViewController.m; sourceTree = "<group>"; };
 		7133B8BF10CE8FA0005953C1 /* HighScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HighScoreViewController.xib; path = Classes/HighScoreViewController.xib; sourceTree = "<group>"; };
-		7133B90410CEA0F0005953C1 /* default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default.plist; sourceTree = "<group>"; };
 		717B15A710C774CC00DFB011 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		717B15AB10C7753A00DFB011 /* NewGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGameViewController.h; sourceTree = "<group>"; };
 		717B15AC10C7753A00DFB011 /* NewGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGameViewController.m; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				7133B8BF10CE8FA0005953C1 /* HighScoreViewController.xib */,
 				8D1107310486CEB800E47090 /* MineSweeperEver-Info.plist */,
 				7133B74910CE3B58005953C1 /* GameStageViewController.xib */,
-				7133B90410CEA0F0005953C1 /* default.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -282,7 +279,6 @@
 				7133B77010CE438D005953C1 /* cell_flag.png in Resources */,
 				7133B77110CE438D005953C1 /* cell_normal.png in Resources */,
 				7133B8C110CE8FA0005953C1 /* HighScoreViewController.xib in Resources */,
-				7133B90510CEA0F0005953C1 /* default.plist in Resources */,
 				7195419410CFEB9700B25682 /* NewRecordViewController.xib in Resources */,
 				71F8E82F10E3B2B300E5F24F /* segment_tools.png in Resources */,
 			);

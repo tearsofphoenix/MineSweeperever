@@ -145,10 +145,16 @@ int nearPos[8][2] ={
 	flagsItem.style= _isInFlag ? UIBarButtonItemStyleDone : UIBarButtonItemStyleBordered ;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
 	[super viewDidLoad];
 
-	self.navigationController.navigationBarHidden = YES; 
+    if ([self respondsToSelector: @selector(setEdgesForExtendedLayout:)])
+    {
+        [self setEdgesForExtendedLayout: UIRectEdgeNone];
+    }
+
+	self.navigationController.navigationBarHidden = YES;
 	
 	_scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 460-44)];
 	_scrollView.delegate = self;
@@ -501,6 +507,11 @@ int nearPos[8][2] ={
 		}while(tmp.isBomb == YES);
 		tmp.isBomb = YES;
 	}
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 @end

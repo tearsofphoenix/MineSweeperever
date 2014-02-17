@@ -19,18 +19,12 @@
     
     [_window makeKeyAndVisible];
     
-	if ([[StorageCenter singleton] checkDefault])
-    {
-        _gameVC = [[NewGameViewController alloc] init];
-        _navigationC = [[UINavigationController alloc] initWithRootViewController: _gameVC];
-        
-        [_window setRootViewController: _navigationC];
-	}else
-    {
-        
-	}
+	[[StorageCenter singleton] checkDefault];
     
-	NSLog(@"%@",[[StorageCenter singleton].defaults objectForKey:@"level0"]);
+    _gameVC = [[NewGameViewController alloc] init];
+    _navigationC = [[UINavigationController alloc] initWithRootViewController: _gameVC];
+    
+    [_window setRootViewController: _navigationC];
 }
 
 

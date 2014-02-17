@@ -14,7 +14,6 @@
 
 GTMOBJECT_SINGLETON_BOILERPLATE(StorageCenter,singleton)
 
-@synthesize defaults = _defaults;
 @dynamic totalPlayCount,sweepBombCount,cancelCount,winCount;
 
 #pragma mark -
@@ -70,25 +69,15 @@ GTMOBJECT_SINGLETON_BOILERPLATE(StorageCenter,singleton)
 	NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
 	self.defaults = [NSMutableDictionary dictionaryWithDictionary:[userDefault dictionaryForKey:DEFAULT_NAME]];
 	
-	if (!_defaults || [_defaults count] == 0) {
-		[self writeDefault];
+	if (!_defaults || [_defaults count] == 0)
+    {
 		return NO;
-	}
-	else {
-//		NSLog(@"---%@",self.defaults);
+	}else
+    {
 		return YES;
 	}
 
 	
-}
-
--(void)writeDefault
-{
-	NSString *path = [[NSBundle mainBundle] pathForResource:@"default" ofType:@"plist"];
-	NSDictionary* dic =  [NSMutableDictionary dictionaryWithContentsOfFile:path];
-	self.defaults = [NSMutableDictionary dictionaryWithDictionary:dic];
-	[self update];
-
 }
 
 -(void)update

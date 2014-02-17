@@ -24,8 +24,6 @@ typedef enum{
 
 -(IBAction)startGame:(id)sender;
 
--(IBAction)onHighScore:(id)sender;
-
--(IBAction)onPlayMovie:(id)sender;
+- (IBAction)onHighScore:(id)sender;
 
 @end

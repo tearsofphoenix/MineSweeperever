@@ -29,8 +29,6 @@
 
 -(BOOL)checkDefault;
 
--(void)writeDefault;
-
 -(BOOL)isRankInTop10:(int)rank Level:(int)level;
 
 -(void)insertRank:(int)time name:(NSString*)name date:(NSDate*)date atLevel:(int)level;

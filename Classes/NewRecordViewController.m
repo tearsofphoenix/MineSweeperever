@@ -24,8 +24,15 @@
 	return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    
+    if ([self respondsToSelector: @selector(setEdgesForExtendedLayout:)])
+    {
+        [self setEdgesForExtendedLayout: UIRectEdgeNone];
+    }
+
 	self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];
 	[nameField becomeFirstResponder];
 	scoreLabel.text = [NSString stringWithFormat:@"%.1f",time/10.0];
@@ -49,6 +56,11 @@
 	[self dismissViewControllerAnimated: YES
                              completion: nil];
 	return NO;
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 @end
